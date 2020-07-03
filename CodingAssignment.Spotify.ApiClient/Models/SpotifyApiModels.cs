@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 
 /* Hint: Use http://jsonutils.com/ to generate models from JSON responses from the API. */
-
 namespace CodingAssignment.Spotify.ApiClient.Models
 {
     public class SearchArtistResponse

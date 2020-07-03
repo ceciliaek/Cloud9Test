@@ -541,6 +541,32 @@ if (typeof jQuery === 'undefined') {
             var $carousel = $(this)
             Plugin.call($carousel, $carousel.data())
         })
+
+        var mood = {
+            energy: $('#energy').val(),
+            danceability: $('#danceability').val(),
+            acousticness: $('#acousticness').val(),
+            loudness: $('#loudness').val(),
+            valence: $('#valence').val(),
+            genre: $('#genre').children("option:selected").val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetRecommendations",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify(mood),
+            success: function (recommendations) {
+                var container = $('<div />');
+                for (var i = 0; i <= recommendations.length - 1; i++) {
+                    container.append('<div class= "col-md-4"><iframe src="https://open.spotify.com/embed/' + recommendations[i] + '" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>');
+                }
+
+                $('#recommendations-tracks').html(container);
+                $("#show-me-more").attr('href', '/Home/ShowMeMore?' + $.param(mood));
+            }
+        });
     })
 
 }(jQuery);
@@ -2584,6 +2610,7 @@ if (typeof jQuery === 'undefined') {
 
 var form = document.querySelector('form');
 form.addEventListener('change', function (event) {
+
     event.preventDefault();
 
     var mood = {
@@ -2607,8 +2634,8 @@ form.addEventListener('change', function (event) {
                 container.append('<div class= "col-md-4"><iframe src="https://open.spotify.com/embed/' + recommendations[i] + '" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>');
             }
 
-            container.append('<button type="button" id="show-me-more" class="btn btn-light">Yah, something like that! Show me more</button>');
             $('#recommendations-tracks').html(container);
+            $("#show-me-more").attr('href', '/Home/ShowMeMore?' + $.param(mood));
         }
     });
 });

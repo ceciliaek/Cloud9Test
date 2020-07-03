@@ -4,7 +4,6 @@ namespace CodingAssignment.Spotify.ApiClient.Models
 {
     public class AuthenticationResponse
     {
-
         [JsonProperty("access_token")]
         public string AccessToken { get; set; }
 
@@ -16,6 +15,5 @@ namespace CodingAssignment.Spotify.ApiClient.Models
 
         [JsonProperty("refresh_token")]
         public string RefreshToken { get; set; }
-       
     }
 }

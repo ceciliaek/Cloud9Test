@@ -27,5 +27,30 @@ namespace Cloud9SpotifyApi.Controllers
 
             return Json(returnHtml, JsonRequestBehavior.AllowGet);
         }
+
+        public async Task<ActionResult> ShowMeMore()
+        {
+            float.TryParse(Request.QueryString["energy"], out float energy);
+            float.TryParse(Request.QueryString["danceability"], out float danceability);
+            float.TryParse(Request.QueryString["acousticness"], out float acousticness);
+            float.TryParse(Request.QueryString["loudness"], out float loudness);
+            float.TryParse(Request.QueryString["valence"], out float valence);
+            var genre = Request.QueryString["genre"];
+
+            RecommendationsRequest recomendationsRequest = new RecommendationsRequest
+            {
+                Energy = energy,
+                Danceability = danceability,
+                Acousticness = acousticness,
+                Loudness = loudness,
+                Valence = valence,
+                Genre = genre
+            };
+
+            var spotifyApiClient = new SpotifyApiClient();
+            var recommendations = await spotifyApiClient.SearchRecommendationsAsync(recomendationsRequest, 24);
+
+            return View(recommendations);
+        }
     }
 }

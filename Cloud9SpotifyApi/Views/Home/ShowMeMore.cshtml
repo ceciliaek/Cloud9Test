@@ -1,0 +1,18 @@
+﻿@model CodingAssignment.Spotify.ApiClient.Models.RecommendationsResponse
+
+@{
+    ViewBag.Title = "This is more like it";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row d-flex justify-content-center" style="margin: 1rem;" >
+    <!-- todo feature -->
+    <button type="button" class="btn btn-info">I love this, save as playlist</button>
+</div>
+
+<div class="row">
+    @foreach (var item in Model.Tracks)
+    {
+        <div class="col-md-4"><iframe src="https://open.spotify.com/embed/@item.Type/@item.Id width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    }
+</div>
