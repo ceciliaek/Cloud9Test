@@ -1,63 +1,60 @@
 ﻿    
-    <div class="jumbotron jumbotron-fluid" style="background-color: transparent;color: rgb(206, 206, 206)">
-        <div class="container">
-            <h1 class="display-4">How u doin?</h1>
-        </div>
+<div class="jumbotron jumbotron-fluid" style="background-color: transparent;color: rgb(206, 206, 206)">
+    <div class="container">
+        <h1 class="display-4">How u doin?</h1>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-sm">
-            <form id="my-mood-form" style="">
+<div class="row">
+    <div class="col-sm">
+        <form id="my-mood-form" style="">
 
-                <!-- target_energy -->
-                <div class="row" style="margin-bottom:50px;">
-                    <span class="emoji">😴</span>
-                    <input id="energy" class="border-0 emoji-slider" type="range" min="0" max="10" />
-                    <span class="emoji">🥳</span>
-                </div>
+            <!-- target_energy -->
+            <div class="row" style="margin-bottom:50px;">
+                <span class="emoji">😴</span>
+                <input id="energy" class="border-0 emoji-slider" type="range" min="0" max="10" />
+                <span class="emoji">🥳</span>
+            </div>
 
-                <!-- target_danceability -->
-                <div class="row" style="margin-bottom:50px;">
-                    <span class="emoji">🧍🏻</span>
-                    <input id="danceability" class="border-0 emoji-slider" type="range" min="0" max="10" />
-                    <span class="emoji">💃🏻</span>
-                </div>
+            <!-- target_danceability -->
+            <div class="row" style="margin-bottom:50px;">
+                <span class="emoji">🧍🏻</span>
+                <input id="danceability" class="border-0 emoji-slider" type="range" min="0" max="10" />
+                <span class="emoji">💃🏻</span>
+            </div>
 
-                <!-- target_acousticness -->
-                <div class="row" style="margin-bottom:50px;">
-                    <span class="emoji">🎤</span>
-                    <input id="acousticness" class="border-0 emoji-slider" type="range" min="0" max="10" />
-                    <span class="emoji">🙊</span>
-                </div>
+            <!-- target_acousticness -->
+            <div class="row" style="margin-bottom:50px;">
+                <span class="emoji">🎤</span>
+                <input id="acousticness" class="border-0 emoji-slider" type="range" min="0" max="10" />
+                <span class="emoji">🙊</span>
+            </div>
+            <div class="row" style="margin-bottom:50px;">
+                <span class="emoji">🔈</span>
+                <input id="loudness" class="border-0 emoji-slider" type="range" min="0" max="10" />
+                <span class="emoji">🔊</span>
+            </div>
 
-                <!-- target_loudness -->
-                <div class="row" style="margin-bottom:50px;">
-                    <span class="emoji">🔈</span>
-                    <input id="loudness" class="border-0 emoji-slider" type="range" min="0" max="10" />
-                    <span class="emoji">🔊</span>
-                </div>
+            <!-- target_valence -->
+            <div class="row" style="margin-bottom:50px;">
+                <span class="emoji">😪</span>
+                <input id="valence" class="border-0 emoji-slider" type="range" min="0" max="10" />
+                <span class="emoji">🥰</span>
+            </div>
 
-                <!-- target_valence -->
-                <div class="row" style="margin-bottom:50px;">
-                    <span class="emoji">😪</span>
-                    <input id="valence" class="border-0 emoji-slider" type="range" min="0" max="10" />
-                    <span class="emoji">🥰</span>
-                </div>
-
-                <!-- Genre -->
-                <div class="row">
-                    <select id="genre" name="genre" multiple>
-                        <option class="emoji" selected="selected" value="folk">🪕</option>
-                        <option class="emoji" value="jazz">🎷</option>
-                        <option class="emoji" value="rock">🎸</option>
-                        <option class="emoji" value="electronic">🎹</option>
-                        <option class="emoji" value="punk">🧷</option>
-                    </select>
-                </div>
-            </form>
-        </div>
-        <div class="col-sm">
-            <div id="recommendations-tracks" class="row d-flex justify-content-center"></div>
-            @*<button type="button" class="btn btn-light">Yah, someething like that! Give me more</button>*@
-        </div>
+            <!-- genre -->
+            <div class="row">
+                <select id="genre" name="genre" multiple>
+                    <option class="emoji" selected="selected" value="folk">🪕</option>
+                    <option class="emoji" value="jazz">🎷</option>
+                    <option class="emoji" value="rock">🎸</option>
+                    <option class="emoji" value="electronic">🎹</option>
+                    <option class="emoji" value="punk">🧷</option>
+                </select>
+            </div>
+        </form>
     </div>
+    <div class="col-sm">
+        <div id="recommendations-tracks" class="row d-flex justify-content-center"></div>
+    </div>
+</div>
