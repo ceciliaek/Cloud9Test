@@ -2607,6 +2607,8 @@ form.addEventListener('change', function (event) {
                 container.append('<div class= "col-md-4"><iframe src="https://open.spotify.com/embed/' + recommendations[i] + '" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>');
             }
 
+            //@*<button type="button" class="btn btn-light">Yah, someething like that! Give me more</button>*@
+            container.append()
             $('#recommendations-tracks').html(container);
         }
     });

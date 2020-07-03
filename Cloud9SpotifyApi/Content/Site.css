@@ -24,21 +24,15 @@ textarea {
 }
 
 .emoji-slider {
-    margin-left: 3.5em;
-    position: absolute;
-    width: 100px;
+    width: 30rem;
 }
 
 .emoji {
-    position: relative;
     font-size: 3.5em;
+    width: 2em;
+    text-align: center;
 }
 
-.emoji-right {
-    position: relative;
-    left: 25rem;
-    font-size: 3.5em;
-}
 
 .my-mood-form {
     margin-bottom: 10rem;
@@ -56,9 +50,9 @@ select {
     overflow-y: hidden;
 }
 
-    select[multiple], select[size] {
-        height: 12rem;
-    }
+select[multiple], select[size] {
+    height: 12rem;
+}
 
 option {
     display: inline-block;

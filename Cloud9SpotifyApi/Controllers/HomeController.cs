@@ -17,7 +17,7 @@ namespace Cloud9SpotifyApi.Controllers
         public async Task<JsonResult> GetRecommendations(RecommendationsRequest recommendationsRequest)
         {
             var spotifyApiClient = new SpotifyApiClient();
-            var recommendations = await spotifyApiClient.SearchRecommendationsAsync(recommendationsRequest);
+            var recommendations = await spotifyApiClient.SearchRecommendationsAsync(recommendationsRequest, 3);
 
             var returnHtml = new List<string>();
             foreach (var item in recommendations.Tracks)

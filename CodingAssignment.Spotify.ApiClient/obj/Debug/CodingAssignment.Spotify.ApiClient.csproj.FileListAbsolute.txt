@@ -30,3 +30,14 @@ C:\Users\cecil\source\repos\Cloud9SpotifyApi\CodingAssignment.Spotify.ApiClient\
 C:\Users\cecil\source\repos\Cloud9SpotifyApi\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.csproj.CopyComplete
 C:\Users\cecil\source\repos\Cloud9SpotifyApi\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.dll
 C:\Users\cecil\source\repos\Cloud9SpotifyApi\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.pdb
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\CodingAssignment.Spotify.ApiClient.dll
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\CodingAssignment.Spotify.ApiClient.pdb
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\Flurl.dll
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\Newtonsoft.Json.dll
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\Flurl.xml
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\bin\Debug\Newtonsoft.Json.xml
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.csprojAssemblyReference.cache
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.csproj.CoreCompileInputs.cache
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.csproj.CopyComplete
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.dll
+C:\Playtime\Cloud9Test\Cloud9Test\CodingAssignment.Spotify.ApiClient\obj\Debug\CodingAssignment.Spotify.ApiClient.pdb
