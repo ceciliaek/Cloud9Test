@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #191414;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+textarea {
+    max-width: 280px;
+}
+
+.emoji-slider {
+    margin-left: 3.5em;
+    position: absolute;
+    width: 100px;
+}
+
+.emoji {
+    position: relative;
+    font-size: 3.5em;
+}
+
+.emoji-right {
+    position: relative;
+    left: 25rem;
+    font-size: 3.5em;
+}
+
+.my-mood-form {
+    margin-bottom: 10rem;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    margin: -5px -20px -5px -5px;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: hidden;
+}
+
+    select[multiple], select[size] {
+        height: 12rem;
+    }
+
+option {
+    display: inline-block;
+}
+
+*:focus {
+    outline: none;
+}
+
+.col-md-4 {
+    margin-bottom: 5rem;
+}

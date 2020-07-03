@@ -1,0 +1,54 @@
+﻿
+<div class="row">
+    <form id="my-mood-form" style="">
+
+        <!-- target_energy -->
+        <div class="row" style="margin-bottom:50px;">
+            <span class="emoji">😴</span>
+            <input id="energy" class="border-0 emoji-slider" type="range" min="0" max="10" />
+            <span class="emoji-right">🥳</span>
+        </div>
+
+        <!-- target_danceability -->
+        <div class="row" style="margin-bottom:50px;">
+            <span class="emoji">🧍🏻</span>
+            <input id="danceability" class="border-0 emoji-slider" type="range" min="0" max="10" />
+            <span class="emoji-right">💃🏻</span>
+        </div>
+
+        <!-- target_acousticness -->
+        <div class="row" style="margin-bottom:50px;">
+            <span class="emoji">🎤</span>
+            <input id="acousticness" class="border-0 emoji-slider" type="range" min="0" max="10" />
+            <span class="emoji-right">🙊</span>
+        </div>
+
+        <!-- target_loudness -->
+        <div class="row" style="margin-bottom:50px;">
+            <span class="emoji">🔈</span>
+            <input id="loudness" class="border-0 emoji-slider" type="range" min="0" max="10" />
+            <span class="emoji-right">🔊</span>
+        </div>
+
+        <!-- target_valence -->
+        <div class="row" style="margin-bottom:50px;">
+            <span class="emoji">😪</span>
+            <input id="valence" class="border-0 emoji-slider" type="range" min="0" max="10" />
+            <span class="emoji-right">🥰</span>
+        </div>
+
+        <!-- Genre -->
+        <div class="row">
+            <select id="genre" name="genre" multiple>
+                <option class="emoji" selected="selected" value="folk">🪕</option>
+                <option class="emoji" value="classical">🎻</option>
+                <option class="emoji" value="jazz">🎷</option>
+                <option class="emoji" value="rock">🎸</option>
+                <option class="emoji" value="electronic">🎹</option>
+                <option class="emoji" value="punk">🧷</option>
+            </select>
+        </div>
+    </form>
+
+    <div id="recommendations-tracks" class="row"></div>
+</div>
